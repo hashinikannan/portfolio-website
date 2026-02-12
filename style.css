@@ -1,0 +1,205 @@
+:root{
+    --text-color: rgb(35, 34, 34);
+    --link-color:#223459;
+    background-color: rgb(197, 234, 250);
+
+}
+*
+{
+     margin: 0%;
+     padding: 0%;
+     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    font-family:"poppins",sans-serif;
+    background-color: var(background-color);
+}
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    text-align: center;
+    height: 80 px;
+}
+nav .left a {
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 15px;
+    
+}
+
+nav .right a {
+    color: var(--text-color);
+    font-size: 15px;
+    margin: 0 10px;
+    margin-top:20px ;
+}
+.topsec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 50px;
+    margin: 50px 0;
+    gap: 40px;
+}
+.topsec .text{
+    flex: 5;
+    ;
+
+}
+.topsec .text h2{
+    font-size: 40px;
+
+}
+.topsec .text .links a{
+    display: inline;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    transition: .1s;
+    
+}
+    .topsec .text .links a:hover{
+        color: var(--text-color);
+        border: 2px solid var(--text-color);
+
+    }
+.topsec .text .links{
+    margin-top: 25px;
+
+ }
+.topsec .photo{
+    flex:2;
+}
+
+.topsec .photo img{
+    border-radius: 50%;
+    border: 3px solid rgb(43, 64, 66);
+    width: 250px;
+    height: 250px;
+    
+}
+.skillsec{
+    padding:  0 50px;
+    margin-bottom: 100px;
+}
+.skillsec h2{
+     text-align: center;
+    font-size: 45px;
+
+}
+.skillsec .text{
+     text-align: center;
+    font-size: px;
+    margin-bottom: 20px;
+    
+}
+.skillsec .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+   
+}
+.skillsec .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border: 1px solid var(--link-color);
+    border-radius: 10px;
+    margin: 10px;
+}
+.address{
+    padding: 0 50px;
+    margin-bottom: 10px;
+}
+.address h2{
+    text-align: center;
+    font-size: 43px;
+}
+.address .text{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: "poppins",sans-serif;
+}
+.langsec{
+    padding: 0 50px;
+    margin-bottom: 100px;
+
+}
+.langsec h2{
+    text-align: center;
+    font-size: 43px;
+}
+.langsec .text{
+     text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.langsec .langs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+   
+}
+.langsec .langs .lang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border: 1px solid var(--link-color);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+
+
+        
+    
+@media (max-width: 600px) {
+
+    
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        font-size: 22px;
+    }
+
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+    .topsec{
+        padding: 0 20px;
+
+    }
+    .topsec .text h2{
+        font-size: 30px;
+        
+    }
+}
